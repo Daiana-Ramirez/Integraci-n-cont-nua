@@ -127,7 +127,7 @@ test("No agrega si la nota es menor que 0 o mayor que 10", () => {
 // Test 14: No agrega si la nota no es un número
 test("No agrega si la nota no es un número", () => {
   registrarUsuario("Eli", "eli@mail.com", "clave");
-  const result = agregarNota("eli@mail.com", "Historia", "siete");
+  const result = agregarNota("eli@mail.com", "Historia", 8);
   console.log(result.mensaje);
   expect(result.success).toBe(false);
 });
