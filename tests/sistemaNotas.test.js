@@ -127,7 +127,7 @@ test("No agrega si la nota es menor que 0 o mayor que 10", () => {
 // Test 14: No agrega si la nota no es un número
 test("No agrega si la nota no es un número", () => {
   registrarUsuario("Eli", "eli@mail.com", "clave");
-  const result = agregarNota("eli@mail.com", "Historia", 8);
+  const result = agregarNota("eli@mail.com", "Historia", "7");
   console.log(result.mensaje);
   expect(result.success).toBe(false);
 });
@@ -163,7 +163,7 @@ test("Devuelve lista vacía si el usuario no existe", () => {
 
 // Test 18: Calcula correctamente el promedio con varias notas
 test("Calcula correctamente el promedio con varias notas", () => {
-  registrarUsuario("Santi", "santi@mail.com", "123");
+  registrarUsuario("Santi", "santi@mail.com", "1234");
   agregarNota("santi@mail.com", "Inglés", 7);
   agregarNota("santi@mail.com", "Francés", 5);
   const promedio = calcularPromedio("santi@mail.com");
