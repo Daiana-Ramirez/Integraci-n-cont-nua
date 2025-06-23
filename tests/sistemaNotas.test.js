@@ -163,7 +163,7 @@ test("Devuelve lista vacía si el usuario no existe", () => {
 
 // Test 18: Calcula correctamente el promedio con varias notas
 test("Calcula correctamente el promedio con varias notas", () => {
-  registrarUsuario("Santi", "santi@mail.com", "123");
+  registrarUsuario("Santi", "santi@mail.com", "1234");
   agregarNota("santi@mail.com", "Inglés", 7);
   agregarNota("santi@mail.com", "Francés", 5);
   const promedio = calcularPromedio("santi@mail.com");
