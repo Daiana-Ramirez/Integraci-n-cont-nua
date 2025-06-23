@@ -191,7 +191,7 @@ test("Devuelve true si el promedio es mayor o igual a 6", () => {
 
 // Test 21: Devuelve false si el promedio es menor a 6
 test("Devuelve false si el promedio es menor a 6", () => {
-  registrarUsuario("Tomi", "tomi@mail.com", "4567");
+  registrarUsuario("Tomi", "tomi@mail.com", "456");
   agregarNota("tomi@mail.com", "Literatura", 4);
   agregarNota("tomi@mail.com", "Arte", 5);
   // Promedio: 4.5
