@@ -4,7 +4,9 @@ name: CI TP4
 on: 
   pull_request: 
   push:
-    branches: [ main ]
+    branches:
+        - main
+        - 'feature/**'
 
 jobs:
   build:
